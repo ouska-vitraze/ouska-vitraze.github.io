@@ -180,8 +180,6 @@ nav a:hover{
     margin-top:-35px;
 }
 
-}
-
 .overlay h2{
 
     font-family:'Cormorant Garamond',serif;
@@ -340,7 +338,7 @@ section p{
 /* ---------- STŘED ---------- */
 
 .hero-center{
-    ...
+    
     transform:translate(-10px,-40px);
 
     display:flex;
@@ -1030,3 +1028,150 @@ grid-template-columns:1fr;
 
 }
 
+/* =======================================
+   MOBIL
+======================================= */
+
+@media (max-width: 900px){
+
+header{
+
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+
+}
+
+.logo h1{
+
+    font-size:38px;
+
+}
+
+.logo p{
+
+    font-size:11px;
+    text-align:center;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+
+}
+
+.hero{
+
+    grid-template-columns:1fr;
+    height:auto;
+    margin-top:40px;
+    padding:40px 0;
+
+}
+
+.hero-left{
+
+    transform:none;
+    order:2;
+
+}
+
+.author-photo{
+
+    width:80%;
+    height:auto;
+    transform:none;
+
+}
+
+.side-photo{
+
+    display:none;
+
+}
+
+.hero-center{
+
+    transform:none;
+    order:1;
+    padding:20px;
+
+}
+
+.hero-center h2{
+
+    font-size:60px;
+
+}
+
+.hero-center p{
+
+    margin-top:35px;
+
+}
+
+.hero-right{
+
+    min-height:auto;
+    transform:none;
+    order:3;
+    padding:40px 0;
+
+}
+
+.gallery-grid{
+
+    position:relative;
+    height:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    padding:0 20px;
+
+}
+
+.gallery-grid img{
+
+    position:static;
+    width:100%;
+    transform:none !important;
+
+}
+
+.about-columns{
+
+    grid-template-columns:1fr;
+
+}
+
+.about-column::after{
+
+    display:none;
+
+}
+
+.gallery-item{
+
+    width:100%;
+    margin:0 0 20px 0;
+
+}
+
+body::before,
+body::after{
+
+    display:none;
+
+}
+
+.top-line-left,
+.top-line-right{
+
+    display:none;
+
+}
+
+}
