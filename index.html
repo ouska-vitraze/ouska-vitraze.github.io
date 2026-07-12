@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>František Ouška | Autorské vitráže</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===================================================== -->
+<!-- HEADER -->
+<!-- ===================================================== -->
+
+<header>
+
+    <div class="top-line-left"></div>
+
+    <div class="top-line-right"></div>
+
+    <div class="logo">
+
+        <h1>Autorské vitráže</h1>
+
+        
+    </div>
+
+    <nav>
+
+         <a href="about.html">O autorovi</a>
+
+        <a href="gallery.html">Galerie</a>
+
+        <a href="exhibitions.html">Výstavy</a>
+
+    </nav>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- HERO -->
+<!-- ===================================================== -->
+
+<section class="hero">
+
+    <!-- levá fotografie -->
+
+   <div class="hero-left">
+
+    <div class="author-group">
+
+        <img src="images/autor.jpg" class="author-photo">
+
+    </div>
+
+</div>
+
+    <!-- střed -->
+
+    <div class="hero-center">
+
+        <h2>
+
+            František<br>
+            Ouška
+
+        </h2>
+
+        <p>
+
+            Obrazové vitráže |
+            Stained Glass |
+            Vetrate Artistiche
+
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="buttons">
+
+            <a href="about.html" class="btn">
+            O autorovi
+            </a>
+
+            <a href="gallery.html" class="btn">
+            Galerie
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- pravá galerie -->
+
+    <div class="hero-right">
+
+    <div class="gallery-grid">
+
+        <img src="images/03.jpg" class="p1">
+        <img src="images/04.jpg" class="p2">
+        <img src="images/05.jpg" class="p3">
+        <img src="images/06.jpg" class="p4">
+        <img src="images/07.jpg" class="p5">
+        <img src="images/08.jpg" class="p6">
+  
+    </div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- KONTAKTNÍ LIŠTA -->
+<!-- ===================================================== -->
+
+<section class="contact-bar">
+
+    <div>
+
+        ☎ +420 608 945 698
+
+    </div>
+
+    <div>
+
+        ✉ FERDOUS@seznam.cz
+
+    </div>
+
+   
+</section>
+
+<!-- ===================================================== -->
+<!-- DALŠÍ SEKCE -->
+<!-- ===================================================== -->
+
+<section id="about">
+
+</section>
+
+<section id="gallery">
+
+</section>
+
+<section id="exhibitions">
+
+</section>
+
+<section id="contact">
+
+</section>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script>
+window.addEventListener("load", function () {
+
+    const grid = document.querySelector(".gallery-masonry");
+
+    new Masonry(grid, {
+        itemSelector: ".gallery-item",
+        columnWidth: ".gallery-item",
+        percentPosition: true,
+        gutter: 32
+    });
+
+});
+</script>
+
+</body>
+
+</html>
