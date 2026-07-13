@@ -491,7 +491,7 @@ section p{
 .p1{
     width:180px;
     top:10px;
-    left:260px;
+    left:220px;
     transform:rotate(-6deg);
     z-index:6;
 }
@@ -501,7 +501,7 @@ section p{
 .p2{
     width:165px;
     top:60px;
-    right:30px;
+    right:10px;
     transform:rotate(5deg);
     z-index:5;
 }
@@ -511,7 +511,7 @@ section p{
 .p3{
     width:155px;
     top:255px;
-    left:265px;
+    left:225px;
     transform:rotate(-5deg);
     z-index:7;
 }
@@ -521,7 +521,7 @@ section p{
 .p4{
     width:170px;
     top:250px;
-    right:50px;
+    right:20px;
     transform:rotate(4deg);
     z-index:4;
 }
@@ -531,7 +531,7 @@ section p{
 .p5{
     width:180px;
     top:430px;
-    left: 260px;
+    left: 220px;
     transform:rotate(-4deg);
     z-index:3;
 }
@@ -541,7 +541,7 @@ section p{
 .p6{
     width:185px;
     top:440px;
-    right:10px;
+    right:-10px;
     transform:rotate(6deg);
     z-index:8;
 }
@@ -1213,6 +1213,18 @@ body::after{
 
         margin-top:60px;
 
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1600px){
+
+    .hero-center{
+        transform:none;
+    }
+
+    .gallery-grid{
+        transform:scale(.90);
     }
 
 }
