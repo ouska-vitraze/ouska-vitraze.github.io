@@ -166,7 +166,7 @@ nav a:hover{
 
    grid-template-columns:1.2fr 0.9fr 1.2fr;
 
-     min-height:100vh;
+    min-height:calc(100vh - 120px);
     height:auto;
 
     overflow:visible;
@@ -862,7 +862,7 @@ body::after{
 
 .exhibitions-page{
 
-  padding:30px 8% 120px;
+  padding:150px 8% 120px;
 }
 
 /* =========================================
@@ -871,7 +871,7 @@ body::after{
 
 .gallery-page{
 
-    padding:80px 8% 120px;
+    padding:150px 8% 120px;
 
 }
 
@@ -1195,8 +1195,6 @@ body::after{
 
 }
 
-}   
-
 @media (max-height: 750px) {
 
     .hero-center{
@@ -1214,14 +1212,6 @@ body::after{
     .hero-center p{
 
         margin-top:60px;
-
-    }
-
-    .gallery-grid{
-
-        transform:scale(.88);
-
-        transform-origin:top center;
 
     }
 
