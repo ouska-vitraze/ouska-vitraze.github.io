@@ -167,9 +167,10 @@ nav a:hover{
 
    grid-template-columns:38% 24% 38%;
 
-    height:100vh;
+     min-height:100vh;
+    height:auto;
 
-    overflow:hidden;
+    overflow:visible;
 
     background:#111;
 
