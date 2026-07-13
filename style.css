@@ -424,9 +424,13 @@ section p{
 
 .hero-right{
 
-    transform:none;
-
     position:relative;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:flex-start;
 
     overflow:hidden;
 
@@ -434,13 +438,9 @@ section p{
 
     min-height:850px;
 
-}
+    padding-top:100px;
 
-
-
-.hero-right img:hover{
-
-    transform:scale(1.04);
+    padding-right:0px;
 
 }
 
@@ -452,6 +452,17 @@ section p{
 
     height:850px;
 
+}
+
+.gallery-mobile{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+
+    margin:0;
+
+    transform:translateX(75px);
 }
 
 .gallery-grid img{
@@ -484,66 +495,6 @@ section p{
 
     z-index:20;
 
-}
-
-/* žena */
-
-.p1{
-    width:180px;
-    top:10px;
-    left:220px;
-    transform:rotate(-6deg);
-    z-index:6;
-}
-
-/* tramvaj */
-
-.p2{
-    width:165px;
-    top:60px;
-    right:10px;
-    transform:rotate(5deg);
-    z-index:5;
-}
-
-/* srdce */
-
-.p3{
-    width:155px;
-    top:255px;
-    left:225px;
-    transform:rotate(-5deg);
-    z-index:7;
-}
-
-/* oblouk */
-
-.p4{
-    width:170px;
-    top:250px;
-    right:20px;
-    transform:rotate(4deg);
-    z-index:4;
-}
-
-/* modrá */
-
-.p5{
-    width:180px;
-    top:430px;
-    left: 220px;
-    transform:rotate(-4deg);
-    z-index:3;
-}
-
-/* panter */
-
-.p6{
-    width:185px;
-    top:440px;
-    right:-10px;
-    transform:rotate(6deg);
-    z-index:8;
 }
 
 .divider{
@@ -675,12 +626,6 @@ body::after{
 /* =========================================
    O AUTOROVI
 ========================================= */
-
-.about-page{
-
-    padding:80px 0 120px;
-
-}
 
 .about-wrapper{
 
@@ -1195,8 +1140,13 @@ body::after{
 
 .gallery-grid{
 
-    transform:scale(.83);
-    transform-origin:top center;
+    display:none;
+
+}
+
+.gallery-mobile{
+
+    display:block;
 
 }
 
@@ -1224,56 +1174,3 @@ body::after{
 
 }
 
-@media (min-width:1200px) and (max-width:1600px){
-
-    .hero-center{
-        transform:none;
-    }
-
-    .gallery-grid{
-        transform:scale(.90);
-    }
-
-}
-
-@media (min-width:1200px) and (max-width:1600px){
-
-    .hero-center{
-        transform:none;
-    }
-
-    .gallery-grid{
-        transform:scale(.90);
-    }
-
-}
-
-/* ===== malé notebooky ===== */
-
-@media (max-width:1600px){
-
-.p1{
-    left:235px;
-}
-
-.p3{
-    left:240px;
-}
-
-.p5{
-    left:235px;
-}
-
-.p2{
-    right:25px;
-}
-
-.p4{
-    right:25px;
-}
-
-.p6{
-    right:10px;
-}
-
-}
