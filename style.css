@@ -164,7 +164,7 @@ nav a:hover{
 
     display:grid;
 
-   grid-template-columns:38% 24% 38%;
+   grid-template-columns:1.2fr 0.9fr 1.2fr;
 
      min-height:100vh;
     height:auto;
@@ -337,7 +337,9 @@ section p{
 
 .hero-center{
     
-    transform:translate(-10px,-40px);
+    transform:none;
+
+    padding:40px 20px 0;
 
     display:flex;
 
@@ -1167,7 +1169,7 @@ body::after{
 
 .hero-right{
 
-    transform:scale(0.9);
+    transform:none;
 
 }
 
@@ -1193,12 +1195,38 @@ body::after{
 
 }
 
-.gallery-grid{
+@media (max-height: 750px) {
 
-    transform:scale(.90);
+    .hero{
 
-    transform-origin:top center;
+        min-height:850px;
 
-}
+    }
+
+    .hero-center{
+
+        transform:translate(-5px,-10px);
+
+    }
+
+    .hero-center h2{
+
+        font-size:74px;
+
+    }
+
+    .hero-center p{
+
+        margin-top:60px;
+
+    }
+
+    .gallery-grid{
+
+        transform:scale(.88);
+
+        transform-origin:top center;
+
+    }
 
 }
