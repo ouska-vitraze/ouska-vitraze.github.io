@@ -423,25 +423,15 @@ section p{
 /* ---------- PRAVÁ ČÁST ---------- */
 
 .hero-right{
-
-    position:relative;
-
     display:flex;
-
     justify-content:flex-end;
-
     align-items:flex-start;
 
-    overflow:hidden;
+    padding-top:20px;      /* posune dolů */
+    padding-right:-30px;     /* posune více doprava */
 
     background:#111;
-
-    min-height:850px;
-
-    padding-top:100px;
-
-    padding-right:0px;
-
+    overflow:hidden;
 }
 
 .gallery-grid{
@@ -457,12 +447,13 @@ section p{
 .gallery-mobile{
     display:block;
     width:100%;
-    max-width:500px;
+    max-width:620px;      /* větší koláž */
     height:auto;
 
-    margin:0;
+    border-radius:8px;
 
-    transform:translateX(75px);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45);
 }
 
 .gallery-grid img{
@@ -1141,12 +1132,6 @@ body::after{
 .gallery-grid{
 
     display:none;
-
-}
-
-.gallery-mobile{
-
-    display:block;
 
 }
 
