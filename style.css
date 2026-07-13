@@ -1228,3 +1228,15 @@ body::after{
     }
 
 }
+
+@media (min-width:1200px) and (max-width:1600px){
+
+    .hero-center{
+        transform:none;
+    }
+
+    .gallery-grid{
+        transform:scale(.90);
+    }
+
+}
