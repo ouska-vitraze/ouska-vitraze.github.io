@@ -49,7 +49,6 @@ header{
 
     z-index:999;
 
-     position:relative;      /* důležité */
 }
 
 header::after{
@@ -176,7 +175,7 @@ nav a:hover{
 
     align-items:start;
 
-    margin-top:-35px;
+    padding-top:120px;
 }
 
 .overlay h2{
@@ -956,30 +955,6 @@ body::after{
     box-shadow:
         0 0 10px rgba(214,180,106,.35),
         0 0 30px rgba(214,180,106,.15);
-
-}
-
-.gallery-masonry{
-
-grid-template-columns:repeat(3,1fr);
-
-}
-
-}
-
-.gallery-masonry{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-.gallery-masonry{
-
-grid-template-columns:1fr;
-
-}
 
 }
 
