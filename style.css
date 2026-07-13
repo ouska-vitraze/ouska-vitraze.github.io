@@ -1187,11 +1187,18 @@ body::after{
 
 }
 
-}
-
 .hero-center h2{
 
     font-size:78px;
+
+}
+
+.gallery-grid{
+
+    transform:scale(.83);
+    transform-origin:top center;
+
+}
 
 }
 
