@@ -1032,22 +1032,17 @@ nav{
 
 }
 
-.gallery-grid{
+.gallery-mobile{
 
-    position:relative;
-    height:auto;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
-    padding:0 20px;
+    display:block;
+
+    width:92%;
+
+    max-width:430px;
+
+    margin:0 auto;
 
 }
-
-.gallery-grid img{
-
-    position:static;
-    width:100%;
-    transform:none !important;
 
 }
 
@@ -1126,12 +1121,6 @@ body::after{
 .hero-center h2{
 
     font-size:78px;
-
-}
-
-.gallery-grid{
-
-    display:none;
 
 }
 
