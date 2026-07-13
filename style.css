@@ -1049,10 +1049,11 @@ nav{
 
 .hero-right{
 
-    min-height:auto;
-    transform:none;
-    order:3;
-    padding:40px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px 0 40px;
 
 }
 
