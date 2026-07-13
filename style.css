@@ -1240,3 +1240,33 @@ body::after{
     }
 
 }
+
+/* ===== malé notebooky ===== */
+
+@media (max-width:1600px){
+
+.p1{
+    left:235px;
+}
+
+.p3{
+    left:240px;
+}
+
+.p5{
+    left:235px;
+}
+
+.p2{
+    right:15px;
+}
+
+.p4{
+    right:25px;
+}
+
+.p6{
+    right:-5px;
+}
+
+}
