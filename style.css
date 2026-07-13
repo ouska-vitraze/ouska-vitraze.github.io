@@ -175,7 +175,7 @@ nav a:hover{
 
     align-items:start;
 
-    padding-top:120px;
+    padding-top:90px;
 }
 
 .overlay h2{
@@ -1183,7 +1183,9 @@ body::after{
 
 .hero-center{
 
-    transform:translate(-5px,-30px);
+    transform:none;
+
+}
 
 }
 
