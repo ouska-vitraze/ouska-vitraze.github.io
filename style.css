@@ -931,232 +931,228 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-@media (max-width:600px){
+/* ======================================================
+   RESPONSIVE
+====================================================== */
 
-.gallery-masonry{
+/* ---------- větší notebooky ---------- */
 
-grid-template-columns:1fr;
+@media (max-width:1400px){
 
+.hero{
+    grid-template-columns:38% 24% 38%;
+}
+
+.hero-center h2{
+    font-size:78px;
 }
 
 .hero-right{
-
-    justify-content:center;
-    align-items:center;
-
-    padding:20px 0;
-
-    margin:0;
+    transform:none;
+}
 
 }
 
-/* =======================================
-   MOBIL
-======================================= */
+/* ---------- menší notebooky ---------- */
 
-@media (max-width: 900px){
+@media (max-width:1300px){
+
+.hero{
+    grid-template-columns:35% 30% 35%;
+}
+
+.hero-center h2{
+    font-size:72px;
+}
+
+.hero-right{
+    transform:none;
+}
+
+}
+
+/* ---------- tablety + mobily ---------- */
+
+@media (max-width:900px){
 
 header{
-
     flex-direction:column;
     gap:20px;
     padding:20px;
-
 }
 
 .logo h1{
-
     font-size:38px;
-
-}
-
-.logo p{
-
-    font-size:11px;
-    text-align:center;
-
 }
 
 nav{
-
-    flex-wrap:wrap;
     justify-content:center;
+    flex-wrap:wrap;
     gap:18px;
-
 }
 
 .hero{
 
-    grid-template-columns:1fr;
-    height:auto;
-    margin-top:40px;
-    padding:40px 20px;
-    gap:30px;
+    display:flex;
+    flex-direction:column;
 
+    align-items:center;
+
+    min-height:auto;
+    padding:150px 20px 60px;
+
+    gap:40px;
 }
 
 .hero-left{
 
-    transform:none;
     order:1;
+    width:100%;
 
+    display:flex;
+    justify-content:center;
 }
 
 .author-photo{
 
-    width:80%;
+    width:min(90%,420px);
     height:auto;
-    transform:none;
 
+    transform:none;
 }
 
 .side-photo{
-
     display:none;
-
 }
 
 .hero-center{
 
-    transform:none;
     order:2;
-    padding:20px;
 
+    padding:0;
+
+    width:100%;
 }
 
 .hero-center h2{
 
-    font-size:60px;
-
+    font-size:64px;
+    line-height:.92;
 }
 
 .hero-center p{
 
     margin-top:35px;
 
+    font-size:14px;
+
+    line-height:1.8;
 }
 
 .hero-right{
 
-    display:none;
+    order:3;
+
+    display:flex;
+
     justify-content:center;
-    align-items:center;
 
-    padding:20px 0 40px;
+    width:100%;
 
+    padding:0;
+
+    transform:none;
+}
+
+.gallery-grid{
+    display:none;
 }
 
 .gallery-mobile{
 
     display:block;
 
-    width:80%;
+    width:min(92%,420px);
 
-    max-width:320px;
-
-    margin:40px auto;
-
+    margin:0 auto;
 }
 
 .about-columns{
 
     grid-template-columns:1fr;
-
 }
 
 .about-column::after{
 
     display:none;
-
 }
 
 .gallery-item{
 
     width:100%;
-    margin:0 0 20px 0;
-
+    margin:0 0 20px;
 }
 
 body::before,
-body::after{
-
-    display:none;
-
-}
-
+body::after,
 .top-line-left,
 .top-line-right{
 
     display:none;
-
 }
 
 }
 
-@media (max-width:1400px){
+/* ---------- malé mobily ---------- */
+
+@media (max-width:600px){
 
 .hero{
 
-    grid-template-columns:38% 24% 38%;
-
+    padding:135px 15px 50px;
 }
 
-.hero-center{
+.logo h1{
 
-    transform:none;
-
+    font-size:30px;
 }
 
 .hero-center h2{
 
-    font-size:78px;
+    font-size:52px;
+}
 
+.hero-center p{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+}
+
+.btn{
+
+    width:210px;
+}
+
+.gallery-mobile{
+
+    width:100%;
 }
 
 }
 
-@media (max-width: 1300px){
+/* ---------- nízké displeje ---------- */
 
-.hero{
-
-    grid-template-columns:35% 30% 35%;
-
-}
+@media (max-height:900px){
 
 .hero-center h2{
 
-    font-size:80px;
-    line-height:0.9;
-
+    font-size:74px;
 }
 
-.hero-right{
+.hero-center p{
 
-    transform:none;
-
+    margin-top:60px;
 }
 
 }
-
-@media (max-height: 900px) {
-
-    .hero-center{
-
-        transform:translate(-5px,-10px);
-
-    }
-
-    .hero-center h2{
-
-        font-size:74px;
-
-    }
-
-    .hero-center p{
-
-        margin-top:60px;
-
-    }
-
-}
-
