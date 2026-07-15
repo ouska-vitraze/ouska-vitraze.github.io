@@ -785,6 +785,8 @@ body::after{
     font-weight:500;
 
     color:#b38b47;
+
+    text-align:center;
 }
 
 .exhibition-place{
@@ -948,20 +950,6 @@ grid-template-columns:1fr;
 
 }
 
-.gallery-mobile{
-
-    width:85%;
-
-    max-width:320px;
-
-    display:block;
-
-    margin:0 auto;
-
-}
-
-}
-
 /* =======================================
    MOBIL
 ======================================= */
@@ -1002,14 +990,15 @@ nav{
     grid-template-columns:1fr;
     height:auto;
     margin-top:40px;
-    padding:40px 0;
+    padding:40px 20px;
+    gap:30px;
 
 }
 
 .hero-left{
 
     transform:none;
-    order:2;
+    order:1;
 
 }
 
@@ -1030,7 +1019,7 @@ nav{
 .hero-center{
 
     transform:none;
-    order:1;
+    order:2;
     padding:20px;
 
 }
@@ -1049,7 +1038,7 @@ nav{
 
 .hero-right{
 
-    display:flex;
+    display:none;
     justify-content:center;
     align-items:center;
 
@@ -1104,6 +1093,28 @@ body::after{
 
 }
 
+@media (max-width:1400px){
+
+.hero{
+
+    grid-template-columns:38% 24% 38%;
+
+}
+
+.hero-center{
+
+    transform:none;
+
+}
+
+.hero-center h2{
+
+    font-size:78px;
+
+}
+
+}
+
 @media (max-width: 1300px){
 
 .hero{
@@ -1127,29 +1138,7 @@ body::after{
 
 }
 
-@media (max-width:1400px){
-
-.hero{
-
-    grid-template-columns:38% 24% 38%;
-
-}
-
-.hero-center{
-
-    transform:none;
-
-}
-
-.hero-center h2{
-
-    font-size:78px;
-
-}
-
-}
-
-@media (max-height: 750px) {
+@media (max-height: 900px) {
 
     .hero-center{
 
